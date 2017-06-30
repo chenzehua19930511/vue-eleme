@@ -8,11 +8,13 @@ import ratings from './components/ratings';
 import seller from './components/seller';
 
 import VueRouter from 'vue-router';
+import VueResource from 'vue-resource';
 
 import "./common/less/index.less";
 
 //
 Vue.use(VueRouter);
+Vue.use(VueResource);
 
 var router=new VueRouter({
   linkActiveClass: "active",
