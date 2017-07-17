@@ -15,8 +15,6 @@
         <div class="content-right" @click.stop="pay">
           <div class="pay" :class="payClass">
             {{payDesc}}
-
-
           </div>
         </div>
       </div>
@@ -223,7 +221,6 @@
           return;
         }
         alert(`支付${this.totalPrice}元`);
-        console.log(this.$root);
       }
     },
     components: {
