@@ -12,7 +12,7 @@ export function formateDate(date, fmt) {
   for (var key in o) {
     if (new RegExp(`(${key})`).test(fmt)) {
       let str = o[key] + '';
-      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? str : padLeftZero(str))
+      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? str : padLeftZero(str));
     }
   }
   return fmt;

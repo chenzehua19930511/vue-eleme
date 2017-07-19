@@ -120,14 +120,12 @@
         this.selectType = type;
         this.$nextTick(()=>{
           this.foodScroll.refresh();
-
         })
       },
       contentToggle(onlyContent){
         this.onlyContent = onlyContent;
         this.$nextTick(()=>{
           this.foodScroll.refresh();
-
         })
       },
       needShow(type, text){
